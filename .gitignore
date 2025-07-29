@@ -1,3 +1,7 @@
 .vscode/
 htmls/*
 !htmls/.gitkeep
+logs/*
+!logs/.gitkeep
+__pycache__/
+*.py.swp
