@@ -9,7 +9,7 @@ import datetime
 
 log_filename = datetime.date.today().isoformat() + '.log'
 logging.basicConfig(
-    filename=os.path.join(config.pathConfig.log_folder_path, log_filename),
+    filename=os.path.join(config.pathConfig.log_dir, log_filename),
     filemode='a',
     level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s | %(message)s'
@@ -46,7 +46,7 @@ def points2html(points: np.ndarray, mode: str = 'scatter'):
             width=1000,
             height=700
         )
-    path = os.path.join(config.pathConfig.html_folder_path, 'pcd.html')
+    path = os.path.join(config.pathConfig.html_dir, 'pcd.html')
     fig.write_html(path)
     logging.info(f"Wrote pcd html at {path}")
 

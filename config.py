@@ -1,3 +1,3 @@
 class pathConfig:
-    html_folder_path = 'htmls'
-    log_folder_path = 'logs'
+    html_dir = 'htmls'
+    log_dir = 'logs'
